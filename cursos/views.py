@@ -7,3 +7,7 @@ def bienvenida(request):
         'descripcion': 'Plataforma para publicar cursos en linea y llevar el registro de sus estudiantes.',
     }
     return render(request, 'bienvenida.html', contexto)
+
+# Pagina personalizada para el error 404
+def error_404(request, exception):
+    return render(request, '404.html', status=404)

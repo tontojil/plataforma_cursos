@@ -22,3 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.bienvenida, name='bienvenida'),
 ]
+
+# Pagina personalizada para el error 404
+handler404 = 'cursos.views.error_404'
