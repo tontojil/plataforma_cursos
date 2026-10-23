@@ -5,8 +5,14 @@
 __pycache__/
 *.pyc
 
-# base de datos local
+# base de datos local de pruebas
 db.sqlite3
 
 # editor
 .vscode/
+
+# estaticos generados con collectstatic
+staticfiles/
+
+# Nota Eva 2: el archivo .env SI se sube al repo porque la evaluacion lo pide.
+# Por eso no esta en este .gitignore.

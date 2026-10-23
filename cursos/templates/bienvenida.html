@@ -43,6 +43,24 @@
             text-align: center;
             max-width: 600px;
             margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .cuadro a {
+            color: aqua;
+        }
+
+        .lista_api {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .lista_api li {
+            margin: 8px 0;
+            background-color: rgb(18, 18, 18);
+            border: 1px solid aqua;
+            border-radius: 5px;
+            padding: 10px;
         }
 
         /* Pie de pagina */
@@ -64,7 +82,20 @@
             <h2>Bienvenido</h2>
             <p>{{ descripcion }}</p>
             <br>
-            <p>Proyecto de Evaluacion 1 - Backend con Python y Django</p>
+            <p>Proyecto de Evaluacion 2 - Backend con Python, Django y Django REST Framework</p>
+        </div>
+
+        <div class="cuadro">
+            <h2>API de cursos</h2>
+            <p>CRUD con GET, POST, PUT, PATCH y DELETE</p>
+            <ul class="lista_api">
+                <li><a href="/cursos/instructores/">Instructores</a></li>
+                <li><a href="/cursos/cursos/">Cursos</a></li>
+                <li><a href="/cursos/estudiantes/">Estudiantes</a></li>
+                <li><a href="/cursos/inscripciones/">Inscripciones</a></li>
+            </ul>
+            <br>
+            <a href="/cursos/">Ver raiz de la API</a>
         </div>
     </main>
 
